@@ -1,0 +1,16 @@
+{
+  "extends": "./base.json",
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    
+    "declaration": true,
+    "declarationMap": true,
+    "composite": true,
+    
+    "jsx": "react-jsx",
+    "outDir": "dist"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
