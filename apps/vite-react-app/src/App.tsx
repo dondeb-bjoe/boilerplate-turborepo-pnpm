@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <div className='bg-red-1000'>
-        <Button appName='vite' className='bg-green-500'>Hola</Button>
+        <Button appName='vite' className='bg-green-700 text-white rounded-lg'>Hola</Button>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
