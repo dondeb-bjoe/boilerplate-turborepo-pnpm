@@ -14,7 +14,7 @@ export const Button = ({ children, className, appName }: ButtonProps) => {
       className={className}
       onClick={() => alert(`Hello from your ${appName} app!`)}
     >
-      <div className="bg-blue-1000">e</div>
+      <div className="bg-blue-1000">errr</div>
       {children}
     </button>
   );

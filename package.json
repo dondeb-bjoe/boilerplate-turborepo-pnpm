@@ -1,5 +1,6 @@
 {
   "name": "boilerplate-monorepo-turbo-pnpm",
+  "author": "dondeb",
   "private": true,
   "scripts": {
     "build": "turbo run build",

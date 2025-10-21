@@ -7,15 +7,27 @@
   },
   "scripts": {
     "generate:component": "turbo gen react-component",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*",
+    "@chromatic-com/storybook": "4.1.1",
     "@repo/tailwind-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@storybook/addon-a11y": "9.1.12",
+    "@storybook/addon-docs": "9.1.12",
+    "@storybook/addon-vitest": "9.1.12",
+    "@storybook/react-vite": "9.1.12",
     "@types/node": "^22.15.3",
     "@types/react": "19.1.0",
     "@types/react-dom": "19.1.1",
-    "typescript": "5.9.2"
+    "storybook": "9.1.12",
+    "typescript": "5.9.2",
+    "vitest": "^3.2.4",
+    "@vitest/browser": "^3.2.4",
+    "playwright": "^1.56.1",
+    "@vitest/coverage-v8": "^3.2.4"
   },
   "dependencies": {
     "react": "^19.1.0",

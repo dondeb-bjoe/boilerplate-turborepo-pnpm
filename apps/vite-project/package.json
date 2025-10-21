@@ -1,0 +1,28 @@
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@repo/ui": "workspace:*",
+    "@tailwindcss/vite": "^4.1.15",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tailwindcss": "^4.1.14"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.0",
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "@repo/tailwind-config": "workspace:*",
+    "@vitejs/plugin-react-swc": "^4.1.0",
+    "globals": "^16.4.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.7"
+  }
+}
