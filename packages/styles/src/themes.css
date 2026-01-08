@@ -1,0 +1,9 @@
+[data-theme="dark"] {
+  --color-bg: #0b0f14;
+  --color-text: #e5e7eb;
+}
+
+[data-theme="light"] {
+  --color-bg: #ebebeb;
+  --color-text: #242424;
+}

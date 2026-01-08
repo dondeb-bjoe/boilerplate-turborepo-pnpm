@@ -7,16 +7,21 @@
   },
   "scripts": {
     "generate:component": "turbo gen react-component",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
     "@types/node": "^22.15.3",
     "@types/react": "19.1.0",
     "@types/react-dom": "19.1.1",
-    "typescript": "5.9.2"
+    "typescript": "5.9.2",
+    "storybook": "^10.1.11",
+    "@storybook/react-vite": "^10.1.11"
   },
   "dependencies": {
+    "@repo/styles": "workspace:*",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   }

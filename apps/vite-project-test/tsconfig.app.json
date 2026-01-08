@@ -1,0 +1,11 @@
+{
+  "extends": "../../packages/typescript-config/apps-base.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "noEmit": true,
+    "jsx": "react-jsx",
+  },
+  "include": ["src"]
+}
