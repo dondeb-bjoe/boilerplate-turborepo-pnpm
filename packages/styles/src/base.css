@@ -1,9 +1,9 @@
 body {
-  font-family: system-ui, sans-serif;
+  font-family: sans-serif;
   background: var(--color-bg);
   color: var(--color-text);
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--color-primary-500);
 }

@@ -1,19 +1,36 @@
 import { useEffect } from 'react';
 import { Button } from '@repo/ui/Button'
-import { numbers } from '@repo/utils';
-import '@repo/styles' // cambiar a index
+import { Card } from '@repo/ui/Card';
+import { strings } from '@repo/utils';
+
+const tecnologias = [
+  { name: 'PNPM', image: '/src/assets/pnpm.png' },
+  { name: 'Turborepo', image: '/src/assets/turborepo.png' },
+  { name: 'Typescript', image: '/src/assets/typescript.png' },
+  { name: 'Vite', image: '/src/assets/vite.png' },
+  { name: 'React', image: '/src/assets/react.svg' },
+  { name: 'CSS', image: '/src/assets/css.svg' },
+  { name: 'Storybook', image: '/src/assets/storybook.png' },
+];
 
 function App() {
-  const total = numbers.addTwoNumbers(2, 3);
+  const saludo = strings.uppercaseFirstLetter('hola');
   useEffect(() => {
     document.documentElement.dataset.theme = "light";
   }, []);
 
   return (
-    <>
-      <Button appName='vite-react' className='bg-yellow-500'>Hello</Button>
-      <p>Hello {total}</p>
-    </>
+    <div className='container'>
+      <p className="title">Monorepo made with</p>
+      <div className='container-cards'>
+        {
+          tecnologias.map((tech) => (
+            <Card key={tech.name} image={tech.image} name={tech.name}></Card>
+          ))
+        }
+      </div>
+      <Button appName='vite-react' className='bg-yellow'>Hola {saludo}</Button>
+    </div>
   )
 }
 
